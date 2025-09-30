@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pengguna - JASTIPASG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>👤 Profil Pengguna</header>
+
+  <div class="card">
+    <div class="avatar">👤</div>
+
+    <div class="info">
+      <p><strong>Nama:</strong> ██████████</p>
+      <p><strong>Nomor WA:</strong> ██████████</p>
+      <p><strong>Alamat:</strong> Jl. Contoh No. 123, Kota Anda</p>
+    </div>
+
+    <div class="saldo-container">
+      <p>💰 Saldo: <strong>Rp 0</strong></p>
+      <p>🎯 Poin: <strong>0</strong></p>
+    </div>
+
+    <div class="btn-container">
+      <button>✏️ Edit Profil</button>
+      <button>🔐 Ganti Kata Sandi</button>
+      <button onclick="logout()">🚪 Logout</button>
+    </div>
+  </div>
+
+  <nav>
+    <a href="dashboard.html">🏠</a>
+    <a href="orders.html">📄</a>
+    <a href="scan.html">🔳</a>
+    <a href="news.html">📰</a>
+    <a href="profile.html">👤</a>
+  </nav>
+
+  <script>
+    function logout() {
+      alert("Anda telah keluar.");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
