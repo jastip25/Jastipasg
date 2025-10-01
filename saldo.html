@@ -53,5 +53,17 @@
     <a href="profile.html" class="active">👤</a>
   </nav>
 
+  <script>
+    // Membuat link navbar aktif
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+      // Sesuaikan href relatif dengan GitHub Pages
+      const currentPath = window.location.pathname.split("/").pop();
+      if (link.getAttribute("href") === currentPath) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
 </body>
 </html>
