@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saldo - JASTIPASG</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>💰 Saldo & Menu Keuangan</header>
+  <header>💰 Saldo & Keuangan</header>
 
-  <div class="card">
-    <h2>Rp 0</h2>
-    <div class="grid">
-      <div class="grid-item">🏅<span>Point</span></div>
-      <div class="grid-item">💰<span>Top Up</span></div>
-      <div class="grid-item">📤<span>Kirim</span></div>
+  <div class="card balance-card">
+    <p>Lokasi: 📍 Tidak diketahui</p>
+    <input type="text" placeholder="🔍 Cari Konter Terdekat...">
+
+    <div class="saldo-info">
+      <h2>💵 Rp 0</h2>
+      <a href="#" class="btn">📜 History</a>
     </div>
   </div>
 
   <div class="card">
-    <h2>📱 Menu Tambahan</h2>
+    <h3>🏦 Menu Utama</h3>
     <div class="grid">
-      <div class="grid-item">📱<span>Layanan PPOB</span></div>
-      <div class="grid-item">👥<span>Jaringan</span></div>
-      <div class="grid-item">🔐<span>Upgrade Akun</span></div>
-      <div class="grid-item">💸<span>Komisi</span></div>
-      <div class="grid-item">🎯<span>Reward</span></div>
-      <div class="grid-item">📢<span>Kode Afiliasi</span></div>
+      <a href="#" class="grid-item">🏅<span>Point</span></a>
+      <a href="#" class="grid-item">💰<span>Topup</span></a>
+      <a href="#" class="grid-item">📤<span>Send</span></a>
     </div>
   </div>
 
   <div class="card">
-    <h2>🕓 Transaksi Terbaru</h2>
-    <p>💳 BULKIS CELLULER Rp 50.900 — ✅ Sukses</p>
+    <h3>⚙️ Menu Tambahan</h3>
+    <div class="grid">
+      <a href="ppob.html" class="grid-item">📱<span>Layanan PPOB</span></a>
+      <a href="#" class="grid-item">👥<span>Jaringan</span></a>
+      <a href="#" class="grid-item">🔐<span>Upgrade Akun</span></a>
+      <a href="#" class="grid-item">💸<span>Komisi Afiliasi</span></a>
+      <a href="#" class="grid-item">🎯<span>Reward Point</span></a>
+      <a href="#" class="grid-item">📢<span>Kode Afiliasi</span></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🕒 Transaksi Terbaru</h3>
+    <p>💳 BUKUL CELLULER — Rp 50.900</p>
+    <p>Status: ✅ <strong>Sukses</strong></p>
   </div>
 
   <nav>
     <a href="dashboard.html">🏠</a>
-    <a href="orders.html">📄</a>
-    <a href="scan.html">🔳</a>
-    <a href="news.html">📰</a>
+    <a href="saldo.html" class="active">💰</a>
     <a href="profile.html">👤</a>
   </nav>
 
