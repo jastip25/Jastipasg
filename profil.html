@@ -5,6 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profil Pengguna - JASTIPASG</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .card {
+      background: white;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .avatar {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .info p, .saldo-container p {
+      margin: 8px 0;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .btn-container button {
+      flex: 1;
+      margin: 0 5px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-container button:hover {
+      background-color: #45a049;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 24px;
+      color: #555;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 10px 0; /* area klik lebih luas */
+    }
+
+    nav a.active, nav a:hover {
+      color: #4CAF50;
+    }
+  </style>
 </head>
 <body>
 
@@ -32,11 +117,9 @@
   </div>
 
   <nav>
-    <a href="dashboard.html">🏠</a>
-    <a href="orders.html">📄</a>
-    <a href="scan.html">🔳</a>
-    <a href="news.html">📰</a>
-    <a href="profile.html">👤</a>
+    <a href="dashboard.html">🏠 Dashboard</a>
+    <a href="scan.html">🔳 Scan</a>
+    <a href="profile.html">👤 Profil</a>
   </nav>
 
   <script>
@@ -44,6 +127,16 @@
       alert("Anda telah keluar.");
       window.location.href = "index.html";
     }
+
+    // Membuat link navbar aktif
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+      // Sesuaikan href relatif dengan GitHub Pages
+      const currentPath = window.location.pathname.split("/").pop();
+      if (link.getAttribute("href") === currentPath) {
+        link.classList.add("active");
+      }
+    });
   </script>
 
 </body>
